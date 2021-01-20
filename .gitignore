@@ -1,58 +1,41 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+*.dat
+*.DS_Store
+*.gz
+*.log
+*.out
+*.pid
+*.seed
+*.swp
+*.un~
+*.iml
+*.ipr
+*.iws
+.idea/
+*.sublime-*
 
-*.env
-
-.vscode/*
-
-
-# Local History for Visual Studio Code
-.history/
-# compiled output
-dist
-tmp
-out-tsc
-# Only exists if Bazel was run
-bazel-out
-
-# dependencies
-node_modules
-# *package-lock.json
-# profiling files
-chrome-profiler-events.json
-speed-measure-plugin.json
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-public
-!/client-cqc/public
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+logs
+node_modules/
 npm-debug.log
-yarn-error.log
-testem.log
-/typings
-# System Files
-.DS_Store
-Thumbs.db
+pids
+results
+coverage
+coverage.html
+.cover*
+lib-cov
 
-# Server public file
-/server/public
+bundles
+docs/_dist
+admin/public/styles/auth.css
+admin/public/styles/auth.min.css
+admin/public/styles/keystone.css
+admin/public/styles/keystone.min.css
+reports
 
-environments/*
+test/e2e/drivers/*
+
+package-lock.json
+yarn.lock
+
+# Website dependencies
+website/.cache
+website/public
