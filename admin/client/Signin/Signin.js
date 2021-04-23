@@ -49,7 +49,7 @@ var SigninView = React.createClass({
 				email: this.state.email,
 				password: this.state.password,
 			},
-			// headers: assign({}, Keystone.csrf.header),
+			headers: assign({}, Keystone.csrf.header),
 		}, (err, resp, body) => {
 			if (err || body && body.error) {
 				return body.error === 'invalid csrf'
