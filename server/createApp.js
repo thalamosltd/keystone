@@ -15,7 +15,7 @@ module.exports = function createApp (keystone, express) {
 	}
 
 	var app = keystone.app;
-	
+
 	//Intialize the header for secuirty issues in keystone
 	app.use(function (req, res, next) {
 	//   res.header('X-Content-Type-Options', 'nosniff');
@@ -30,7 +30,7 @@ module.exports = function createApp (keystone, express) {
 	// 	res.removeHeader('Server');
 		next()
 	});
-	
+
 	require('./initLetsEncrypt')(keystone, app);
 	require('./initSslRedirect')(keystone, app);
 
